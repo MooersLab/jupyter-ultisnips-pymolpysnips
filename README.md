@@ -20,7 +20,7 @@ Installing and using snippets with UltiSnips
 In the following setup, we use the Vundle plugin manager. 
 The PyMOL.snippets could be stored inside the UltiSnips directory, but they would be lost if you delete the UltiSnips directory. 
 To help make sure your snippets are not deleted if the UltiSnips directory ever gets deleted you will want to create a subdirectory called myultisnips at the top level of the `.vim` directory. 
-Move the `PyMOL.snippets` file to this subdirectory. 
+Move the `python_pymol.snippets` file to this subdirectory. 
 We will inform Vim of this location when customizing the `.vimrc` file for UltiSnips a little further down.
 
 ```bash
@@ -28,7 +28,7 @@ cd .vim
 mkdir myultisnips
 ```
 
-In the myultisnips directory, you can add your own snippets and add the UltiSnips snippets provided above in the ultisnippymolsnips folder.
+In the myultisnips directory, you can add your own snippets and add the UltiSnips snippets provided above in the `ultisnippymolsnips` folder.
 
 ```bash
 $ cp ~/pymolsnips/ultisnippymolsnips/* .
@@ -67,5 +67,5 @@ let g:UltiSnipsSnippetDirectories=['/Users/blaine/.vim/my-snippets/Ultisnips','U
 
 ## Note
 
-Some snippets depend on some pymolshortcuts.
+Some snippets depend on some `pymolshortcuts.py`.
 Add the [pymolshortcuts.py](https://github.com/MooersLab/pymolshortcuts) file to your working directory.
