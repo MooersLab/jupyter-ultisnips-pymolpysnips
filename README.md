@@ -1,3 +1,6 @@
+![Version](https://img.shields.io/static/v1?label=jupyter-ultisnips-pymolpysnips&message=0.2&color=brightcolor)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 # jupyter-ultisnips-pymolpysnips for Vim or NeoVim
 
 PyMOL Python snippet library to edit live Jupyter notebook cells with Vim or neovim using the UltiSnips plugin and the browser plugin [GhostText web browser extension](https://github.com/fregante/GhostText) and the [GhostText-for-Vim](https://github.com/raghur/vim-ghost) plugin for Vim or the [GhostText-for-NeoVim](https://github.com/subnut/nvim-ghost.nvim) plugin for NeoVim. 
@@ -7,19 +10,19 @@ PyMOL Python snippet library to edit live Jupyter notebook cells with Vim or neo
 
 UltiSnips is a more recent plugin manager that depends on Python3. 
 Vim has to be installed with the option of using Python3 enabled to be able to use UltiSnips. 
-The UltiSnips plugin is the snippet handling engine. 
+The UltiSnips plugin is the snippet-handling engine. 
 It provides a large number of advanced snippet features. 
 
 However, it does not come with libraries of snippets. 
 The snippets must be installed separately. 
 The `honza/vim-snippets` plugin contains snippets for many languages. 
-The `python_pymol.snippets` file can be stored in a mysnippets subfolder of the hidden `.vim` directory as described below.
+The `python_pymol.snippets` file can be stored in a `mysnippets` subfolder of the hidden `.vim` directory as described below.
 
 UltinSnips can read SnipMate snippets.
 Installing and using snippets with UltiSnips
 In the following setup, we use the Vundle plugin manager. 
 The PyMOL.snippets could be stored inside the UltiSnips directory, but they would be lost if you delete the UltiSnips directory. 
-To help make sure your snippets are not deleted if the UltiSnips directory ever gets deleted you will want to create a subdirectory called myultisnips at the top level of the `.vim` directory. 
+If the UltiSnips directory ever gets deleted, you will want to create a subdirectory called myultisnips at the top level of the `.vim` directory to help ensure your snippets are not deleted. 
 Move the `python_pymol.snippets` file to this subdirectory. 
 We will inform Vim of this location when customizing the `.vimrc` file for UltiSnips a little further down.
 
@@ -83,4 +86,15 @@ Add the [pymolshortcuts.py](https://github.com/MooersLab/pymolshortcuts) file to
 - [jupyter-snipmate-pymolpysnips](https://github.com/MooersLab/jupyter-snipmate-pymolpysnips)
 - [jupyter-neosnippets-pymolpysnips](https://github.com/MooersLab/jupyter-neosnippets-pymolpysnips)
 - [jupyter-atom-pymolpysnips](https://github.com/MooersLab/jupyter-atom-pymolpysnips)
+
+
+## Update history
+|Version      | Changes                                                                                                                                    | Date                 |
+|:-----------:|:------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------:|
+| Version 0.2 |  Added badges funding, and update table.                                                                                                    | 2024 May 17          |
+
+
+## Funding
+- NIH: R01 CA242845, R01 AI088011
+- NIH: P30 CA225520 (PI: R. Mannel); P20GM103640 and P30GM145423 (PI: A. West)
 
